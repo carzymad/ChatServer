@@ -91,8 +91,7 @@ int main()
 	server_ad.sin_addr.s_addr = inet_addr("127.0.0.1");
 	
 	printf("%d\n", bind(server_fd, (struct  sockaddr*)&server_ad, sizeof(server_ad)));
-	listen(server_fd, 10);
-	
+	listen(server_fd, 10); 
 	int *client_fd;
 	sockaddr_in client_ad;
 	socklen_t len = sizeof(client_ad);
