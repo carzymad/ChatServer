@@ -1,6 +1,6 @@
-run:server.o 
-	g++ -o run server.o -lpthread
-server.o:server.cpp
-	g++ -c server.cpp
+test:test.o 
+	g++ -o test test.o -lpthread
+test.o:test.cpp
+	g++ -c test.cpp
 clean:
-	rm run server.o
+	rm test test.o

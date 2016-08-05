@@ -1,6 +1,6 @@
-run:client.o 
-	g++ -o run client.o -lpthread
-client.o:client.cpp
-	g++ -c client.cpp
+baseclient:baseclient.o 
+	g++ -o baseclient baseclient.o -lpthread
+baseclient.o:baseclient.cpp
+	g++ -c baseclient.cpp
 clean:
-	rm run client.o
+	rm baseclient baseclient.o
